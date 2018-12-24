@@ -3,7 +3,7 @@
 <!-- based on a Pen by Devilish Alchemist @ http://codepen.io/devilishalchemist/pen/LERvpM -->
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <title>Index</title>
 
   <link rel="stylesheet" href="./_resources/css/normalize.min.css">
   <link rel="stylesheet" href="./_resources/css/whhg.css">
@@ -52,43 +52,61 @@
 
           <section>
             <div class="page-title">
-              <h1><i class="icon icon-bookmarkalt"></i> Home <a name='Index'></a></h1>
+              <h1><i class="icon icon-bookmarkalt"></i> Index <a name='Index'></a></h1>
             </div>
             <div class="fade fade-top"></div>
             <div class="page-body">
-              <p>
-Created miércoles 12 diciembre 2018
+              <h2>Apuntes de Ruby on Rails de Udemy</h2>
+
+<p>
+<div style='padding-left: 30pt'>
+<img src="./img/Beginners-guide-to-learn-ruby-on-rails.jpg" height="444">
+</div>
 </p>
 
-<h1>SetEnvironment</h1>
+<p>
+<a href="https://es.wikipedia.org/wiki/Ruby_on_Rails" title="Ruby on Rails" class="https">Ruby on Rails</a>, también conocido como RoR o Rails, es un framework de aplicaciones web de código abierto escrito en el lenguaje de programación Ruby, siguiendo el paradigma del patrón Modelo Vista Controlador.  Definición de Wikipedia*
+</p>
+
+<p>
+Ruby on Rails, también conocido como RoR o Rails, es un framework de aplicaciones web de código abierto escrito en el lenguaje de programación Ruby, siguiendo el paradigma del patrón Modelo Vista Controlador (MVC). Trata de combinar la simplicidad con la posibilidad de desarrollar aplicaciones del mundo real escribiendo menos código que con otros frameworks y con un mínimo de configuración. El lenguaje de programación Ruby permite la metaprogramación, de la cual Rails hace uso, lo que resulta en una sintaxis que muchos de sus usuarios encuentran muy legible. Rails se distribuye a través de RubyGems, que es el formato oficial de paquete y canal de distribución de bibliotecas y aplicaciones Ruby.
+</p>
+
+<h2>Filosofia</h2>
+
+<p>
+Los principios fundamentales de Ruby on Rails incluyen "<a href="https://es.wikipedia.org/wiki/No_te_repitas" title="No te repitas" class="https">No te repitas</a>" (Del inglés Don't repeat yourself, DRY) y <a href="https://es.wikipedia.org/wiki/Convenci%C3%B3n_sobre_configuraci%C3%B3n" title="Convención sobre Configuración" class="https">Convención sobre Configuración</a>
+</p>
+
+<h1>Script de SetEnvironment</h1>
 
 <p>
 Este script sirve para crear cargar la configuración del ambiente
 </p>
 
-
 <hr>
 
-<br>
-
 <p>
+<div style='padding-left: 30pt'>
 #!/bin/bash<br>
 eval "$(rbenv init -)"<br>
 version="2.5.0"<br>
 echo "------------------------------------"<br>
 echo "Ejecutando comandos rbenv para programar"<br>
 echo "-------------------------------------"
+</div>
 </p>
 
 <p>
+<div style='padding-left: 30pt'>
 rbenv shell $version<br>
 echo "Configurando rbenv shell con $version"<br>
 rbenv global $version<br>
 echo "Configurando rbenv global con $version"<br>
 rbenv rehash<br>
 echo "Configurando rbenv rehash"
+</div>
 </p>
-
 
 <hr>
 
