@@ -76,6 +76,30 @@ Ruby on Rails, también conocido como RoR o Rails, es un framework de aplicacion
 El lenguaje de programación Ruby permite la metaprogramación, de la cual Rails hace uso, lo que resulta en una sintaxis que muchos de sus usuarios encuentran muy legible. Rails se distribuye a través de RubyGems, que es el formato oficial de paquete y canal de distribución de bibliotecas y aplicaciones Ruby.
 </p>
 
+<h2>Arquitectura MVC de Rails</h2>
+
+<p>
+Las piezas de la arquitectura Modelo Vista-Controlador en Ruby on Rails son las siguientes:
+</p>
+
+<h3>Modelo</h3>
+
+<p>
+En las aplicaciones web orientadas a objetos sobre bases de datos, el Modelo consiste en las clases que representan a las tablas de la base de datos.
+</p>
+
+<p>
+En Ruby on Rails, las clases del Modelo son gestionadas por ActiveRecord. Por lo general, lo único que tiene que hacer el programador es heredar una de las clases ActiveRecord::Base, y el programa averiguará automáticamente qué tabla usar y qué columnas tiene.
+</p>
+
+<p>
+Las definiciones de las clases también detallan las relaciones entre clases con sentencias de mapeo objeto relacional. Por ejemplo, si la clase Imagen tiene una definición has_many:comentarios, y existe una instancia de Imagen llamada a, entonces a.comentarios devolverá un array con todos los objetos Comentario cuya columna imagen_id (en la tabla comentarios) sea igual a a.id.
+</p>
+
+<p>
+Las rutinas de validación de datos (validates_uniqueness_of:checksum) y las rutinas relacionadas con la actualización (after_destroy:borrar_archivo), (before_update:actualizar_detalles) también se especifican e implementan en la clase del modelo.
+</p>
+
 <h2>Filosofia</h2>
 
 <p>
