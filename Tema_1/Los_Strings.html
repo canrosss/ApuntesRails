@@ -3,7 +3,7 @@
 <!-- based on a Pen by Devilish Alchemist @ http://codepen.io/devilishalchemist/pen/LERvpM -->
 <head>
   <meta charset="UTF-8">
-  <title>Lo básico de Ruby</title>
+  <title>Los Strings</title>
 
   <link rel="stylesheet" href="../_resources/css/normalize.min.css">
   <link rel="stylesheet" href="../_resources/css/whhg.css">
@@ -30,8 +30,8 @@
 <li><a href="../Home.html" title="Home" class="page">Home</a></li>
 <li><a href="../Tema_1.html" title="Tema 1" class="page">Tema 1</a>
 <ul>
-<li><b>Lo básico de Ruby</b></li>
-<li><a href="./Los_Strings.html" title="Los Strings" class="page">Los Strings</a></li>
+<li><a href="./Lo_básico_de_Ruby.html" title="Lo básico de Ruby" class="page">Lo básico de Ruby</a></li>
+<li><b>Los Strings</b></li>
 </ul></li>
 </ul>
 
@@ -48,16 +48,16 @@
       <div class="content_inner">
         <article>
           <header>
-            <a id="navPrev" href='../Tema_1.html'><span><i class="icon icon-chevron-left"></i></span></a>
+            <a id="navPrev" href='./Lo_básico_de_Ruby.html'><span><i class="icon icon-chevron-left"></i></span></a>
 
             <a id="navHome" href='../Home.html'><span><i class="icon icon-homealt"></i></span></a>
 
-            <a id="navNext" href='./Los_Strings.html'><span><i class="icon icon-chevron-right"></i></span></a>
+            <span class='insen'><i class="icon icon-chevron-right"></i></span>
           </header>
 
           <section>
             <div class="page-title">
-              <h1><i class="icon icon-bookmarkalt"></i> Lo básico de Ruby <a name='Tema 1:Lo básico de Ruby'></a></h1>
+              <h1><i class="icon icon-bookmarkalt"></i> Los Strings <a name='Tema 1:Los Strings'></a></h1>
             </div>
             <div class="fade fade-top"></div>
             <div class="page-body">
@@ -66,48 +66,40 @@ Created miércoles 26 diciembre 2018
 </p>
 
 <p>
-Recursos del lenguaje<br>
-<a href="http://www.ruby-lang.org" title="http://www.ruby-lang.org" class="http">http://www.ruby-lang.org</a>
+Un String es una cadena de Texto entrecomillada.<br>
+Ejemplos:
 </p>
-
-<br>
-
-<h2>#Hello World</h2>
 
 <p>
-puts "Hola"
+"Mi nombre es Carlos"
 </p>
 
-<h2>#Variables</h2>
+<h2>String Interpolation vs String Concatenation</h2>
 
 <p>
-hello = "Hello World"<br>
-puts hello
+Si quiero juntar dos cadenas de texto, debo usar "String concatenation"
 </p>
-
-<h2>#Métodos en Ruby</h2>
 
 <p>
-def mi_metodo<br>
-<div style='padding-left: 30pt'>
-#contenido el metodo<br>
-puts "Prueba del metodo
-</div>
-end
+first_name ="Carlos"<br>
+last_name="Garcia"
 </p>
-
-<h2>#Métodos en Ruby con argumentos</h2>
 
 <p>
-def mi_metodo(algo)<br>
-<div style='padding-left: 30pt'>
-puts algo
-</div>
-end
+puts first_name+" "+last_name
 </p>
 
-<br>
-<br>
+<p>
+Entonces, para poder incorporar esto en un string debo usar la interpolación
+</p>
+
+<p>
+puts "Mi primer nombre es #{first_name} y mi apellido es #{last_name}"
+</p>
+
+<p>
+Si ejecuto, el mismo comando con ' no funcionará.
+</p>
 
 
             </div>
