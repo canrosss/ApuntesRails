@@ -113,6 +113,121 @@ Ejemplo
 </div>
 </p>
 
+<p>
+Una versión mejorada utiliza metodos para poder usar cada operación.
+</p>
+
+<p>
+Código
+</p>
+
+
+<hr>
+
+<p>
+<div style='padding-left: 30pt'>
+  def welcome(msg, separator)<br>
+   20.times {print "#{separator}"}<br>
+   print "\n"<br>
+   puts msg<br>
+   20.times {print "#{separator}"}<br>
+  end
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+  def multiply(first_num, second_num)
+</div>
+<div style='padding-left: 60pt'>
+  first_num.to_f * second_num.to_f
+</div>
+<div style='padding-left: 30pt'>
+  end
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+  def add(first_num, second_num)
+</div>
+<div style='padding-left: 60pt'>
+  first_num.to_f + second_num.to_f
+</div>
+<div style='padding-left: 30pt'>
+  end
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+  def substract(first_num, second_num)
+</div>
+<div style='padding-left: 60pt'>
+  first_num.to_f - second_num.to_f
+</div>
+<div style='padding-left: 30pt'>
+  end
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+  def divided (first_num, second_num)
+</div>
+<div style='padding-left: 60pt'>
+  first_num.to_f / second_num.to_f
+</div>
+<div style='padding-left: 30pt'>
+  end
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+  def mod (first_num, second_num)
+</div>
+<div style='padding-left: 60pt'>
+  first_num.to_f % second_num.to_f
+</div>
+<div style='padding-left: 30pt'>
+  end
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+  welcome "Simple calculator","*"
+</div>
+<div style='padding-left: 60pt'>
+puts<br>
+puts "Please enter your first number"<br>
+first_number = gets.chomp<br>
+puts "Please enter your second number"<br>
+second_number = gets.chomp<br>
+puts "The first number multiplied by the second number is: #{multiply(first_number, second_number)}"<br>
+puts "The first number divided by the second number is: #{divided(first_number, second_number)}"<br>
+puts "The first number substracted by the second number is: #{substract(first_number, second_number)}"<br>
+puts "The first number added by the second number is: #{add(first_number, second_number)}"
+</div>
+<div style='padding-left: 30pt'>
+  puts "The first number mod by the second number is: #{mod(first_number, second_number)}"
+</div>
+</p>
+
+
+<hr>
+
+<br>
+
+<p>
+El resultado es el mismo, pero ahora el código usa metodos ☺<br>
+<div style='padding-left: 30pt'>
+<img src="./The_Number_Analyzer/pasted_image001.png">
+</div>
+</p>
+
+
             </div>
             <div class="fade fade-bottom"></div>
           </section>
