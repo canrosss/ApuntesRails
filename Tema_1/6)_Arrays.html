@@ -129,6 +129,45 @@ a.first<br>
 </div>
 </p>
 
+<p>
+Tambien existe otra forma de crear elementos, mediante rangos.<br>
+Un ejemplo de rangos serian numeros del 1 al 100.
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+  *ESTO CREA UN RANGO DEL 1 AL 100<br>
+|
+</div>
+x = 1..100
+</p>
+
+<p>
+Si queremos verificar la clase del objeto, utilizamos .class<br>
+x.class<br>
+<b>=&gt;Range</b>
+</p>
+
+<p>
+¿Qué hace el metodo to_a<br>
+The 'to_a' simply tells Ruby: "take this range of 10 numbers and turn it into an array of numbers". You'll see from the formatting on the print that this has occurred.
+</p>
+
+<p>
+Entonces podemos convertir el rango en un array de la siguiente forma:
+</p>
+
+<p>
+rango = rango.to_a<br>
+puts rango<br>
+irb(main):018:0&gt; print rango<br>
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99]=&gt; nil<br>
+irb(main):019:0&gt; 
+</p>
+
+<br>
+
+
             </div>
             <div class="fade fade-bottom"></div>
           </section>
